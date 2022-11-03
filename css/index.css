@@ -1,0 +1,82 @@
+:root {
+    --primary-orange : hsl(26,100%, 55%);
+    --primary-pale-orange: hsl(25, 100%, 94%);
+    --neutral-very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-dark-grayish-blue:  hsl(219, 9%, 45%);
+    --neutral-grayish-blue: hsl(220, 14%, 75%);
+    --neutral-light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-black: hsl(0, 0%, 0%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0.9rem;
+}
+
+.header-container .header--bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-container .header--icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header--icons img:nth-child(2) {
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.main-container .main--product {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .main--product img {
+    height: 17rem;
+    object-fit:cover;
+}
+
+.main-container .main--detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem 1.2rem;
+}
+
+.main--company {
+    color:hsl(26,100%, 55%);
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.main--title {
+    font-size: 1.5rem;
+    color: var(--neutral-very-dark-blue);
+}
+
+.main--paragraph {
+    color: var(--neutral-dark-grayish-blue);
+    font-size: 0.9rem;
+}
+
+.main--cost {
+    display: flex;
+}
