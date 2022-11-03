@@ -68,15 +68,75 @@ body {
 }
 
 .main--title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--neutral-very-dark-blue);
 }
 
 .main--paragraph {
     color: var(--neutral-dark-grayish-blue);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .main--cost {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    color: var(--neutral-very-dark-blue);
+}
+
+.main--cost > span {
+    color: var(--neutral-black);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.main--cost > h4 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.main--cost > h4 > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 1.2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: var(--primary-orange);
+    background-color: var(--primary-pale-orange);
+}
+
+.main--number-items {
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--neutral-light-grayish-blue);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.main--button-add {
+    height: 2.3rem;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-orange);
+    font-size: 0.7rem;
+    color: var(--neutral-white);
+}
+
+.main--button-add img {
+    height: 0.86rem;
+    filter: invert(96%) sepia(91%) saturate(32%) hue-rotate(91deg) brightness(177%) contrast(100%);
 }
